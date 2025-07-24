@@ -1,0 +1,139 @@
+body{
+    background-color: whitesmoke;
+    color: #00010c;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    max-width: 2000px;
+    margin: auto;
+}
+main{
+    padding: 0px 10px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00010c;
+    padding: 20px; 
+    margin-top: 20px;
+
+}
+header h1 {
+    text-align:left;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: #e0c15a;
+    padding: 5px;
+    margin-top: 20px;
+    animation: swingIn 2s; 
+    text-align:justify;
+    padding: 5px;
+}
+@keyframes swingIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 5;
+        transform: translateY(0);
+      }
+    }    
+.phrase span {
+    opacity: 0;
+    display: inline-block;
+    font-family:'Courier New', Courier, monospace;
+    font-style:oblique;
+    color: #e0c15a;
+    transform: translateY(20px);
+    animation: zoomIn forwards;
+}
+    .phrase span:nth-child(1) {animation-delay: 0.6s; animation-duration: 0.4s;}
+    .phrase span:nth-child(2) {animation-delay: 0.6s; animation-duration: 0.4s;}
+    .phrase span:nth-child(3) { animation-delay: 0.8s; animation-duration: 2s; }
+    .phrase span:nth-child(4) { animation-delay: 0.8s; animation-duration: 2s; }
+
+    @keyframes zoomIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+nav a{
+    color: #e0c15a;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+nav a:hover{
+    color: #b3870e;
+}
+h2{
+    color: #00010c;
+    font-family:'Cascadia Code', monospace;
+    font-style:normal;
+    font-weight: bold;
+    text-align: center;
+    
+}
+h3{
+    color: #00010c;
+    font-family:'Cascadia Code', monospace;
+    font-style:normal;
+    font-weight: bold;
+    margin:10px;
+    
+    
+}
+article{
+    padding: 20px;
+    font-family: 'Cascadia Code', monospace;
+    color: #00010c;
+}
+.banner {
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+    background-color: whitesmoke;
+}
+h3 cta-button a{
+    color: #e0c15a;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-left:46%;
+    font-size: large;
+    background-color: #00010c;  
+    border: 2px solid #e0c15a;  
+    
+}
+h3 cta-button a:hover{
+    background-color: #e0c15a;
+    color: #00010c;
+    transform: background-color 0.5s ease-in;
+}
+footer {
+    background-color: #EADDD2;
+    color: #00010c;
+    text-align: center;
+    padding: 5px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer a{
+    color: #00010c;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #e0c15a;
+}   

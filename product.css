@@ -1,0 +1,97 @@
+body{
+    background-color: whitesmoke;
+    color: #00010c;
+    font-family: 'Cascadia Code', monospace;
+    padding: 5px;
+    max-width: 2000px;
+    text-align: center;
+    margin: 0 auto;
+}
+h2{
+    background-color: #00010c;
+    color: #e0c15a;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-radius: 10px;
+    border:#e0c15a outset;
+}
+ p {
+    color: #00010c;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; 
+}
+nav {
+    color: #00010c; 
+    background-color: #e0c15a;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.navflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav  p {
+    color: #00010c;
+    background-color: #e0c15a;
+    font-family: 'Courier New', Courier, monospace;
+    /* text-align: right;  ; */
+    
+}
+nav h3  {
+    color: #00010c;
+    background-color: #e0c15a;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    /* text-align:justify left; */
+    animation: swingIn 2s, forwards; 
+    
+    padding: 5px;
+}
+@keyframes swingIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 5;
+        transform: translateY(0);
+      }
+    }    
+footer {
+    background-color: #EADDD2;
+    color: #00010c;
+    text-align: center;
+    padding: 5px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer a{
+    color: #00010c;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #e0c15a;
+}   
+.image {
+  /* width: 800px; */
+  height: 10%;
+  overflow:auto;
+  
+}
+
+.image img {
+  width: 25%;
+  height: 50%;
+  
+  
+  
+  /**object-fit: contain; /* Or try: contain, fill, none */
+  padding: 2%;
+  border-color:#00010c;
+  border-radius: 4px;
+}
